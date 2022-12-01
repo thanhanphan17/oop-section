@@ -13,17 +13,29 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\fraction">
+      <UniqueIdentifier>{7473bab0-4bf3-49c5-ba56-b24bcd23933e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fraction.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="fraction\operator.cpp">
+      <Filter>Source Files\fraction</Filter>
+    </ClCompile>
+    <ClCompile Include="fraction\constructor.cpp">
+      <Filter>Source Files\fraction</Filter>
+    </ClCompile>
+    <ClCompile Include="fraction\stream.cpp">
+      <Filter>Source Files\fraction</Filter>
+    </ClCompile>
+    <ClCompile Include="fraction\getsetter.cpp">
+      <Filter>Source Files\fraction</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fraction.h">
+    <ClInclude Include="fraction\fraction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

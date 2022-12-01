@@ -11,6 +11,9 @@ public:
 	Fraction(int);
 	Fraction(int, int);
 
+	bool setDeno(int);
+	bool setNum(int);
+
 	// operator +, Fraction1 + Fraction the result would be a Fraction
 	Fraction operator + (Fraction const&);
 	Fraction operator - (Fraction const&);
@@ -24,6 +27,5 @@ public:
 
 	// iostream
 	friend std::ostream& operator << (std::ostream&, Fraction);
-
-	void show();
+	friend std::istream& operator >> (std::istream&, Fraction&);
 };

@@ -1,11 +1,12 @@
 #include <iostream>
-#include "fraction.h"
+#include "fraction/fraction.h"
 
 int main() {
-	Fraction A(1, 2);
-	Fraction B(2, 3);
-	
-	std::cout << ++A << "\n";
+	Fraction A;
 
+	std::cin >> A;
+
+	std::cout << A;
+	
 	return 0;
 }

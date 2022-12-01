@@ -1,21 +1,6 @@
 #include "fraction.h"
 #include <iostream>
 
-Fraction::Fraction() {
-	this->numerator = 1;
-	this->denominator = 1;
-}
-
-Fraction::Fraction(int numerator) {
-	this->numerator = numerator;
-	this->denominator = 1;
-}
-
-Fraction::Fraction(int numerator, int denominator) {
-	this->numerator = numerator;
-	this->denominator = denominator;
-}
-
 // operator +, Fraction1 + Fraction the result would be a Fraction
 // unary operator
 Fraction Fraction::operator + (Fraction const& fraction) {
@@ -65,15 +50,4 @@ Fraction& Fraction::operator ++(int fake_arg) {
 	Fraction temp = *this;
 	this->numerator = this->numerator + this->denominator;
 	return temp;
-}
-
-std::ostream& operator << (std::ostream& out, Fraction fraction) {
-	out << fraction.numerator << "/" << fraction.denominator;
-
-	return out;
-}
-
-
-void Fraction::show() {
-	std::cerr << this->numerator << " / " << this->denominator;
 }

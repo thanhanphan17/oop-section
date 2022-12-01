@@ -127,11 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="fraction.cpp" />
+    <ClCompile Include="fraction\constructor.cpp" />
+    <ClCompile Include="fraction\getsetter.cpp" />
+    <ClCompile Include="fraction\operator.cpp" />
+    <ClCompile Include="fraction\stream.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fraction.h" />
+    <ClInclude Include="fraction\fraction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
