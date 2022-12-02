@@ -12,4 +12,7 @@ public:
 	Animal(const char*, bool, bool, float);
 	Animal(const Animal &);
 	~Animal();
+
+	char* getName() const; // getter
+	bool setName(const char*); // setter
 };
