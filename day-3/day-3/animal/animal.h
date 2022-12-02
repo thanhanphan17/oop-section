@@ -4,7 +4,7 @@ class Animal {
 private:
 	char* name;
 	bool canFly, canSwim;
-	float speed;
+	float speed; // >= 0
 
 public:
 	Animal();
@@ -15,4 +15,5 @@ public:
 
 	char* getName() const; // getter
 	bool setName(const char*); // setter
+	
 };

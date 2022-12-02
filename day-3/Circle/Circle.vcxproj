@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c4109001-7bf5-41f5-8a5e-74de1e6ce246}</ProjectGuid>
-    <RootNamespace>day3</RootNamespace>
+    <ProjectGuid>{fcb37a72-b759-489a-b844-25ca60f2bf30}</ProjectGuid>
+    <RootNamespace>Circle</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="animal\constructor.cpp" />
-    <ClCompile Include="animal\getsetter.cpp" />
+    <ClCompile Include="circle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="point.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="animal\animal.h" />
+    <ClInclude Include="circle.h" />
+    <ClInclude Include="point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

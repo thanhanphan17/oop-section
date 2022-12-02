@@ -1,0 +1,9 @@
+﻿  circle.cpp
+  main.cpp
+  point.cpp
+E:\cpp-teaching\Code\oop-section\day-3\Circle\point.cpp(33,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\cpp-teaching\Code\oop-section\day-3\Circle\point.cpp(34,11): warning C4244: 'initializing': conversion from 'const int' to 'float', possible loss of data
+E:\cpp-teaching\Code\oop-section\day-3\Circle\point.cpp(36,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\cpp-teaching\Code\oop-section\day-3\Circle\point.cpp(37,11): warning C4244: 'initializing': conversion from 'const int' to 'float', possible loss of data
+  Generating Code...
+  Circle.vcxproj -> E:\cpp-teaching\Code\oop-section\day-3\x64\Debug\Circle.exe

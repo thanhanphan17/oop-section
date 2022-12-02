@@ -1,7 +1,7 @@
-
 #include <iostream>
+#include "animal/animal.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    Animal tiger("tiger", true, true, 50);
+   
 }

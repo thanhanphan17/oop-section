@@ -1,14 +1,16 @@
 #include "animal.h"
 #include <string>
+#include <iostream>
 
 Animal::Animal() {
+	std::cerr << "call default";
 	this->name = new char;
 	this->canFly = this->canSwim = false;
 	this->speed = 0;
 }
 
 Animal::Animal(const char* name) {
-	this->name = new char[strlen(name)];
+	this->name = new char[strlen(name) + 1];
 
 	for (int i = 0; i < strlen(name); ++i) {
 		this->name[i] = name[i];
@@ -21,7 +23,8 @@ Animal::Animal(const char* name) {
 
 Animal::Animal(const char* name, bool canFly, 
 	bool canSwim, float speed) {
-	this->name = new char[strlen(name)];
+
+	this->name = new char[strlen(name) + 1];
 
 	for (int i = 0; i < strlen(name); ++i) {
 		this->name[i] = name[i];
@@ -34,7 +37,7 @@ Animal::Animal(const char* name, bool canFly,
 }
 
 Animal::Animal(const Animal& animal) {
-	this->name = new char[strlen(animal.name)];
+	this->name = new char[strlen(animal.name) + 1];
 
 	for (int i = 0; i < strlen(animal.name); ++i) {
 		this->name[i] = animal.name[i];
@@ -47,6 +50,5 @@ Animal::Animal(const Animal& animal) {
 }
 
 Animal::~Animal() {
-	delete this->name;
-	this->name = nullptr;
+	delete[] this->name;
 }
