@@ -3,8 +3,8 @@
 
 class Circle {
 private:
-	Point center; // O
-	Point layOnCircle; // A
+	Point center; // O center
+	Point layOnCircle; // A lay on circle
 
 public:
 	Circle();
