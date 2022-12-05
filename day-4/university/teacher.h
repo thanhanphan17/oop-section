@@ -14,4 +14,6 @@ public:
 	~Teacher();
 
 	void resign(School);
+
+	const char* getName() const;
 };

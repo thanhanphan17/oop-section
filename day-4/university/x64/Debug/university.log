@@ -1,6 +1,2 @@
 ﻿  main.cpp
-  school.constructor.cpp
-  student.controller.cpp
-  teacher.controller.cpp
-  Generating Code...
-  university.vcxproj -> E:\cpp-teaching\Code\oop-section\day-4\x64\Debug\university.exe
+  university.vcxproj -> D:\Semester 3\OOP\Lesson\oop-section\day-4\x64\Debug\university.exe

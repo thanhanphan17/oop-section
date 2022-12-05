@@ -48,6 +48,12 @@
     <ClCompile Include="school\school.constructor.cpp">
       <Filter>Source Files\school</Filter>
     </ClCompile>
+    <ClCompile Include="school\school.controller.cpp">
+      <Filter>Source Files\school</Filter>
+    </ClCompile>
+    <ClCompile Include="teacher\teacher.getSetter.cpp">
+      <Filter>Source Files\teacher</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">

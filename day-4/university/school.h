@@ -15,4 +15,7 @@ public:
 	School(const char*);
 
 	~School();
+
+	void addTeacher(Teacher);
+	void printTeacher();
 };
