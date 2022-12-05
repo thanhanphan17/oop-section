@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="course\course.constructor.cpp" />
+    <ClCompile Include="course\course.getSetter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="school\school.constructor.cpp" />
     <ClCompile Include="school\school.controller.cpp" />
     <ClCompile Include="student\student.constructor.cpp" />
+    <ClCompile Include="student\student.getSetter.cpp" />
     <ClCompile Include="teacher\student.controller.cpp" />
     <ClCompile Include="teacher\teacher.constructor.cpp" />
     <ClCompile Include="teacher\teacher.controller.cpp" />

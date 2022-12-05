@@ -10,8 +10,21 @@ int main() {
 	highSchool.addTeacher(A);
 	highSchool.addTeacher(B);
 	highSchool.addTeacher(C);
-
 	highSchool.printTeacher();
+
+	Student D("Zxcv", "1234");
+	Student E("Bnm", "787");
+
+	highSchool.addStudent(D);
+	highSchool.addStudent(E);
+	highSchool.printStudent();
+
+	Course F("Math", "456", 10);
+	Course G("History", "789", 20);
+	
+	highSchool.addCourse(F);
+	highSchool.addCourse(G);
+	highSchool.printCourse();
 
 	return 0;
 }

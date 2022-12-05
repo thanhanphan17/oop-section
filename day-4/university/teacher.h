@@ -16,4 +16,5 @@ public:
 	void resign(School);
 
 	const char* getName() const;
+	const char* getId() const;
 };

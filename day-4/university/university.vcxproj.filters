@@ -54,6 +54,12 @@
     <ClCompile Include="teacher\teacher.getSetter.cpp">
       <Filter>Source Files\teacher</Filter>
     </ClCompile>
+    <ClCompile Include="student\student.getSetter.cpp">
+      <Filter>Source Files\student</Filter>
+    </ClCompile>
+    <ClCompile Include="course\course.getSetter.cpp">
+      <Filter>Source Files\course</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">

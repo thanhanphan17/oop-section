@@ -15,4 +15,7 @@ public:
 	Course(int);
 	Course(const char*, const char*, int);
 
+	char const* getCourseName();
+	void addTeacher(Teacher);
+
 };

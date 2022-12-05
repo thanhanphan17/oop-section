@@ -36,3 +36,7 @@ Course::Course(const char* name,
 
 	this->capacity = capacity;
 }
+
+void Course::addTeacher(Teacher teacher) {
+	this->teachers.push_back(teacher);
+}

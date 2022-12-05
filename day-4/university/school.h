@@ -13,9 +13,16 @@ private:
 public:
 	School();
 	School(const char*);
-
 	~School();
 
 	void addTeacher(Teacher);
 	void printTeacher();
+
+	void addStudent(Student);
+	void printStudent();
+
+	void addCourse(Course);
+	void printCourse();
+
+	void addTeacherToCourse(Teacher, Course&);
 };
