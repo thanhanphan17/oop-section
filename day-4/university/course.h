@@ -17,6 +17,11 @@ public:
 
 	char const* getCourseName();
 	void addTeacher(Teacher);
+	void addStudent(Student);
 	
 	vector<Teacher> getTeacherList();
+	vector<Student> getStudentList();
+
+	int getCapacity();
+	void resizeCapacity(int);
 };

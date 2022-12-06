@@ -7,3 +7,11 @@ char const* Course::getCourseName() {
 vector<Teacher> Course::getTeacherList() {
 	return this->teachers;
 }
+
+vector<Student> Course::getStudentList() {
+	return this->students;
+}
+
+int Course::getCapacity() {
+	return this->capacity;
+}

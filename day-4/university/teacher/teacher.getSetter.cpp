@@ -1,3 +1,4 @@
+#include "../stdafx.h"
 #include "../teacher.h"
 
 const char* Teacher::getName() const {

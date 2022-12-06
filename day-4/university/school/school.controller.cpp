@@ -52,6 +52,29 @@ void School::addTeacherToCourse(Teacher teacher, Course& course) {
 	}
 }
 
+void School::addStudentToCourse(Student student, Course& course) {
+	bool containStudent = false, containCourse = false;
+	for (int i = 0; i < this->students.size();++i) {
+		if (strcmp(this->students[i].getId(), student.getId()) == 0) {
+			containStudent = true;
+			break;
+		}
+	}
+
+	for (int i = 0; i < this->courses.size(); ++i) {
+		if (strcmp(this->courses[i].getCourseName(), course.getCourseName()) == 0) {
+			containCourse = true;
+			break;
+		}
+	}
+
+	if (containStudent && containCourse) {
+		if (course.getStudentList().size() < course.getCapacity()) {
+			course.addStudent(student);
+		}
+	}
+}
+
 std::pair<Course&, bool>  School::getCourseByName(const char* name) {
 	for (int i = 0; i < this->courses.size(); ++i) {
 		if (strcmp(this->courses[i].getCourseName(), name) == 0) {
@@ -62,3 +85,22 @@ std::pair<Course&, bool>  School::getCourseByName(const char* name) {
 	return { course, true };
 }
 
+std::pair<Student&, bool> School::getStudentById(const char* id) {
+	for (int i = 0; i < this->students.size(); ++i) {
+		if (strcmp(this->students[i].getId(), id) == 0) {
+			return { this->students[i],false };
+		}
+	}
+	Student student;
+	return { student, true };
+}
+
+std::pair<Teacher&, bool> School::getTeacherById(const char* id) {
+	for (int i = 0; i < this->teachers.size(); ++i) {
+		if (strcmp(this->teachers[i].getId(), id) == 0) {
+			return { this->teachers[i],false };
+		}
+	}
+	Teacher teacher;
+	return { teacher, true };
+}

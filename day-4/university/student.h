@@ -14,6 +14,7 @@ public:
 	~Student();
 
 	char const* getName();
+	char const* getId();
 
 	void enrollCourse(Course, const char*);
 	void leftSchool(School);

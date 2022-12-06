@@ -25,6 +25,9 @@ public:
 	void printCourse();
 
 	void addTeacherToCourse(Teacher, Course&);
+	void addStudentToCourse(Student, Course&);
 
 	std::pair<Course&, bool> getCourseByName(const char*);
+	std::pair<Student&, bool> getStudentById(const char*);
+	std::pair<Teacher&, bool> getTeacherById(const char*);
 };

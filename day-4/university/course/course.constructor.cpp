@@ -40,3 +40,7 @@ Course::Course(const char* name,
 void Course::addTeacher(Teacher teacher) {
 	this->teachers.push_back(teacher);
 }
+
+void Course::addStudent(Student student) {
+	this->students.push_back(student);
+}
