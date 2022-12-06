@@ -17,5 +17,6 @@ public:
 
 	char const* getCourseName();
 	void addTeacher(Teacher);
-
+	
+	vector<Teacher> getTeacherList();
 };

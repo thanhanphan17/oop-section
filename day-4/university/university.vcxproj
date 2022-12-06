@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="course\course.constructor.cpp" />
+    <ClCompile Include="course\course.controller.cpp" />
     <ClCompile Include="course\course.getSetter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="school\school.constructor.cpp" />

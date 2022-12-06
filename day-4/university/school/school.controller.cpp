@@ -51,3 +51,14 @@ void School::addTeacherToCourse(Teacher teacher, Course& course) {
 		course.addTeacher(teacher);
 	}
 }
+
+std::pair<Course&, bool>  School::getCourseByName(const char* name) {
+	for (int i = 0; i < this->courses.size(); ++i) {
+		if (strcmp(this->courses[i].getCourseName(), name) == 0) {
+			return { this->courses[i], false};
+		}
+	}
+	Course course;
+	return { course, true };
+}
+
