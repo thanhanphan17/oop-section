@@ -104,3 +104,20 @@ std::pair<Teacher&, bool> School::getTeacherById(const char* id) {
 	Teacher teacher;
 	return { teacher, true };
 }
+
+void School::removeTeacher(Teacher teacher) {
+	int pos = -1;
+	for (int i = 0; i < this->teachers.size(); ++i) {
+		if (strcmp(teachers[i].getId(), teacher.getId()) == 0) {
+			pos = i;
+		}
+	}
+
+	if (pos != -1) {
+		for (int i = 0; i < this->courses.size(); ++i) {
+			courses[i].removeTeacherById(teacher.getId());
+		}
+		this->teachers.erase(this->teachers.begin() + pos);
+	}
+}
+

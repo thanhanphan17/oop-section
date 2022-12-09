@@ -23,7 +23,9 @@ int main() {
 
 	if (!highSchool.getCourseByName("Math").second) {
 		highSchool.addTeacherToCourse(highSchool.getTeacherById("1234").first, highSchool.getCourseByName("Math").first);
+		highSchool.addTeacherToCourse(highSchool.getTeacherById("1234").first, highSchool.getCourseByName("History").first);
 		highSchool.addTeacherToCourse(highSchool.getTeacherById("1235").first, highSchool.getCourseByName("Math").first);
+		
 		highSchool.addStudentToCourse(highSchool.getStudentById("56165").first, highSchool.getCourseByName("Math").first);
 		highSchool.addStudentToCourse(highSchool.getStudentById("413165").first, highSchool.getCourseByName("Math").first);
 	} else {
@@ -33,16 +35,12 @@ int main() {
 	Minh.enrollCourse(highSchool, highSchool.getCourseByName("Math").first, "456");
 
 	highSchool.getCourseByName("Math").first.removeStudentById("313215");
-	highSchool.getCourseByName("Math").first.removeTeacherById("1234");
+	highSchool.removeTeacher(A);
 
-	vector<Student> SList = highSchool.getCourseByName("Math").first.getStudentList();
-	vector<Teacher> TList = highSchool.getCourseByName("Math").first.getTeacherList();
+	vector<Teacher> CourseTList = highSchool.getCourseByName("Math").first.getTeacherList();
+	vector<Teacher> TList = highSchool.getTeacherList();
 
-	for (auto x : TList) {
-		cout << x.getName() << std::endl;
-	}
-
-	for (auto x : SList) {
+	for (auto x : CourseTList) {
 		cout << x.getName() << std::endl;
 	}
 

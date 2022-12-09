@@ -133,6 +133,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="school\school.constructor.cpp" />
     <ClCompile Include="school\school.controller.cpp" />
+    <ClCompile Include="school\school.getSetter.cpp" />
     <ClCompile Include="student\student.constructor.cpp" />
     <ClCompile Include="student\student.getSetter.cpp" />
     <ClCompile Include="teacher\student.controller.cpp" />

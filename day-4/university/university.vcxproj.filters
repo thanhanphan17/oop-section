@@ -63,6 +63,9 @@
     <ClCompile Include="course\course.controller.cpp">
       <Filter>Source Files\course</Filter>
     </ClCompile>
+    <ClCompile Include="school\school.getSetter.cpp">
+      <Filter>Source Files\school</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">

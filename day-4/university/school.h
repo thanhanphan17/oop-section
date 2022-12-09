@@ -24,8 +24,11 @@ public:
 	void addCourse(Course);
 	void printCourse();
 
+	void removeTeacher(Teacher);
 	void addTeacherToCourse(Teacher, Course&);
 	void addStudentToCourse(Student, Course&);
+
+	vector<Teacher> getTeacherList();
 
 	std::pair<Course&, bool> getCourseByName(const char*);
 	std::pair<Student&, bool> getStudentById(const char*);
