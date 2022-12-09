@@ -33,13 +33,14 @@ int main() {
 	Minh.enrollCourse(highSchool, highSchool.getCourseByName("Math").first, "456");
 
 	highSchool.getCourseByName("Math").first.removeStudentById("313215");
+	highSchool.getCourseByName("Math").first.removeTeacherById("1234");
 
 	vector<Student> SList = highSchool.getCourseByName("Math").first.getStudentList();
-	//vector<Teacher> TList = highSchool.getCourseByName("Math").first.getTeacherList();
+	vector<Teacher> TList = highSchool.getCourseByName("Math").first.getTeacherList();
 
-	//for (auto x : TList) {
-	//	cout << x.getName() << std::endl;
-	//}
+	for (auto x : TList) {
+		cout << x.getName() << std::endl;
+	}
 
 	for (auto x : SList) {
 		cout << x.getName() << std::endl;
