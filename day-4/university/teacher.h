@@ -13,7 +13,7 @@ public:
 	Teacher(const char*, const char*, int);
 	~Teacher();
 
-	void resign(School);
+	void resign(School&);
 
 	const char* getName() const;
 	const char* getId() const;
